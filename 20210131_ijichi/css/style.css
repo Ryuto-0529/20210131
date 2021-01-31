@@ -1,0 +1,339 @@
+/*---------------------
+共通
+-----------------------*/
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  display: block;
+}
+.wrap {
+  width: 1100px;
+  margin: 0 auto;
+}
+.content-title {
+  font-size: 1.875rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.btn {
+  width: 25%;
+  margin: 20px auto 0;
+  background-color: #dc0224;
+  font-weight: bold;
+  padding: 10px 0;
+  text-align: center;
+  color: #ffffff;
+  transition: .5s;
+}
+.btn:hover {
+  background-color: #dc4e66;
+}
+/*---------------------
+ヘッダー
+---------------------*/
+.header {
+  width: 100%;
+  background-color: #ffffff;
+  height: 70px;
+  color: #000000;
+  line-height: 70px;
+  font-weight: bold;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+}
+.header-title {
+  font-size: 1.5rem;
+  margin-left: 30px;
+}
+.header-nav ul li {
+  margin-right: 30px
+}
+.header a {
+  color: #000000;
+  transition: .5s;
+}
+.header a:hover {
+  color: #6e6e6e;
+}
+#hamburger {
+  display: none;
+}
+#mainview {
+  background-image: url(../img/mv.png);
+  background-size: cover;
+  background-position: center;
+  height: 750px;
+  position: relative;
+}
+.catchcopy {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #ffffff;
+  font-weight: bold;
+  width: 100%;
+}
+.catchcopy-ja {
+  font-size: 3.125rem;
+  margin-bottom: 20px;
+}
+.catchcopy-en {
+  font-size: 1.125rem;
+}
+
+/*---------------------
+会社の想い
+---------------------*/
+#mind {
+  width: 100%;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 80px 0;
+}
+.mind-title {
+  font-size: 1.875rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+.mind-text {
+  line-height: 24px;
+}
+
+/*---------------------
+サービス
+---------------------*/
+#service {
+  width: 100%;
+  padding: 80px 0;
+}
+#service .wrap .flex {
+  flex-wrap: wrap;
+}
+.service-content {
+  width: 49%;
+  margin-bottom: 20px;
+}
+.service-content img {
+  display: block;
+  width: 100%;
+}
+.service-content h3 {
+  font-size: 1.125rem;
+  margin: 10px 0;
+}
+.service-content p {
+  line-height: 22px;
+}
+
+/*---------------------
+ニュース
+---------------------*/
+#news {
+  background-color: #000000;
+  width: 100%;
+  padding: 80px 0;
+}
+.news-header {
+  margin-bottom: 20px;
+}
+#news .content-title {
+  color: #ffffff;
+  margin: 0;
+}
+#news .btn {
+  margin: 0;
+  width: 20%;
+  font-size: 0.875rem;
+  line-height: 14px;
+}
+.news-content {
+  background-color: #ffffff;
+  padding: 20px;
+  margin-bottom: 10px;
+  color: #000000;
+  transition: .5s;
+}
+.news-content:hover {
+  background-color: #bcbcbc;
+}
+.news-content p {
+  display: inline-block;
+  padding-left: 5px;
+  font-weight: bold;
+}
+
+/*---------------------
+社員ブログ
+---------------------*/
+#blog {
+  width: 100%;
+  padding: 80px 0;
+}
+.blog-content {
+  width: 32%;
+  margin-bottom: 20px;
+}
+.blog-content img {
+  width: 100%;
+  transition: .5s;
+}
+.blog-content img:hover {
+  opacity: .7;
+}
+.blog-date {
+  padding: 10px 0;
+}
+.blog-title {
+  font-size: 1.125rem;
+}
+.blog-content a {
+  color: #000000;
+}
+
+/*---------------------
+会社概要・採用情報
+---------------------*/
+#company a {
+  width: 50%;
+  padding: 100px;
+  font-size: 1.875rem;
+  margin-bottom: 80px;
+}
+#company a:nth-of-type(2) {
+  background-color: #000000;
+}
+#company a:nth-of-type(2):hover {
+  background-color: #656565;
+}
+
+/*---------------------
+お問い合わせ
+---------------------*/
+#contact {
+  width: 100%;
+  padding: 80px 0;
+  background-color: #f5f6f9;
+}
+.contact-text {
+  text-align: center;
+}
+#contact .btn {
+  margin-top: 50px;
+  font-size: 1.25rem;
+  width: 20%;
+  padding: 15px 0;
+}
+/*---------------------
+フッター
+---------------------*/
+.footer {
+  width: 100%;
+  background-color: #000000;
+  font-size: 0.75rem;
+  color: #ffffff;
+  padding: 20px 0;
+}
+.footer ul li::after {
+  content: "|";
+  display: inline-block;
+  padding: 0 10px;
+}
+.footer ul li:last-child::after {
+  display: none;
+}
+.footer a {
+  display: inline-block;
+  color: #ffffff;
+  transition: .5s;
+}
+.footer a:hover {
+  color: #6e6e6e;
+}
+
+/*------------------------------
+ レスポンシブ
+------------------------------*/
+@media screen and (max-width: 768px) {
+  .wrap {
+    width: 700px;
+  }
+  .header-wrap {
+    position: relative;
+  }
+  #hamburger {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    cursor: pointer;
+    z-index: 999;
+    top: 15px;
+    right: 20px;
+    transition: .5s;
+  }
+  #hamburger span {
+    position: absolute;
+    left: 2px;
+    display: block;
+    width: 35px;
+    height: 2px;
+    background-color: #000000;
+    transition: .5s;
+  }
+  #hamburger span:nth-of-type(1) {
+    top: 10px;
+  }
+  #hamburger span:nth-of-type(2) {
+    top: 20px;
+  }
+  #hamburger span:nth-of-type(3) {
+    top: 30px;
+  }
+  .header-nav {
+    display: none;
+  }
+  #mainview {
+    margin-top: 70px;
+  }
+  .service-contents {
+    flex-wrap: wrap;
+  }
+  .service-content {
+    width: 95%;
+    margin: 0 auto 20px;
+  }
+  #blog .flex {
+    flex-wrap: wrap;
+  }
+  .blog-content {
+    width: 95%;
+    margin: 0 auto 10px;
+  }
+
+  small {
+    display: block;
+    width: 50%;
+    text-align: center;
+  }
+  .footer ul {
+    display: block;
+    width: 50%;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .footer ul li::after {
+    display: none;
+  }
+  .footer ul li {
+    margin-bottom: 20px;
+  }
+}
