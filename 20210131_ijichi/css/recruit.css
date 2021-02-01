@@ -170,7 +170,7 @@ td {
 ------------------------------*/
 @media screen and (max-width: 768px) {
   .wrap {
-    width: 700px;
+    width: 90%;
   }
   .header-wrap {
     position: relative;
@@ -228,5 +228,22 @@ td {
   }
   .footer ul li {
     margin-bottom: 20px;
+  }
+
+  @media screen and (max-width: 540px) {
+    #contact .btn {
+      width: 80%;
+    }
+    .footer .flex {
+      display: block;
+      width: 100%;
+      margin: 0 auto;
+    }
+    small {
+      display: block;
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 15px;
+    }
   }
 }

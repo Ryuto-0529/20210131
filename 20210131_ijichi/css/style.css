@@ -265,7 +265,7 @@ a {
 ------------------------------*/
 @media screen and (max-width: 768px) {
   .wrap {
-    width: 700px;
+    width: 90%;
   }
   .header-wrap {
     position: relative;
@@ -279,6 +279,7 @@ a {
     top: 15px;
     right: 20px;
     transition: .5s;
+    display: block;
   }
   #hamburger span {
     position: absolute;
@@ -335,5 +336,38 @@ a {
   }
   .footer ul li {
     margin-bottom: 20px;
+  }
+  
+  @media screen and (max-width: 540px) {
+    #service .btn {
+      width: 80%;
+    }
+    #news .btn {
+      width: 50%;
+    }
+    .news-content {
+      font-size: .875rem;
+    }
+    #blog .btn {
+      width: 80%;
+    }
+    #company .btn {
+      padding: 100px 10px;
+    }
+    #contact .btn {
+      width: 80%;
+    }
+    .footer .flex {
+      display: block;
+      width: 100%;
+      margin: 0 auto;
+    }
+    small {
+      display: block;
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 15px;
+    }
+    
   }
 }

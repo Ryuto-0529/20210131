@@ -167,7 +167,7 @@ a {
 ------------------------------*/
 @media screen and (max-width: 768px) {
   .wrap {
-    width: 700px;
+    width: 90%;
   }
   .header-wrap {
     position: relative;
@@ -207,9 +207,6 @@ a {
   #mainview {
     margin-top: 70px;
   }
-
-  
-
   small {
     display: block;
     width: 50%;
@@ -226,5 +223,25 @@ a {
   }
   .footer ul li {
     margin-bottom: 20px;
+  }
+  @media screen and (max-width: 540px) {
+    .news-content {
+      width: 90%;
+      font-size: 0.875rem;
+    }
+    #contact .btn {
+      width: 80%;
+    }
+    .footer .flex {
+      display: block;
+      width: 100%;
+      margin: 0 auto;
+    }
+    small {
+      display: block;
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 15px;
+    }
   }
 }
