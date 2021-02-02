@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>株式会社TECH</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+  <header class="header">
+    <div class="flex header-wrap">
+      <h1 class="header-title"><a href="index.html">TECH</a></h1>
+      <div class="header-nav">
+        <ul class="flex">
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="service.html">事業内容</a></li>
+          <li><a href="news.html">ニュース</a></li>
+          <li><a href="blog.html">社員ブログ</a></li>
+          <li><a href="company.html">会社概要</a></li>
+          <li><a href="recruit.html">採用情報</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+      </div>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav class="drawer-nav" id="drawer-nav">
+        <ul class="drawer-nav-list">
+          <li class="drawer-nav-item"><a href="index.html">ホーム</a></li>
+          <li class="drawer-nav-item"><a href="service.html">事業内容</a></li>
+          <li class="drawer-nav-item"><a href="news.html">ニュース</a></li>
+          <li class="drawer-nav-item"><a href="blog.html">社員ブログ</a></li>
+          <li class="drawer-nav-item"><a href="company.html">会社概要</a></li>
+          <li class="drawer-nav-item"><a href="recruit.html">採用情報</a></li>
+          <li class="drawer-nav-item"><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div id="mainview">
+    <div class="catchcopy">
+      <h2 class="catchcopy-ja">お問い合わせ</h2>
+    </div>
+  </div>
+  <section id="contact-form">
+    <div class="wrap">
+      <form action="#">
+        <div class="contact-content">
+          <label for="company-name">会社名</label>
+          <input id="" type="text">
+        </div>
+        <div class="conatact-content">
+          <label for="user-name">お名前<span class="essential">*</span></label>
+          <input type="text">
+        </div>
+        <div class="contact-content">
+          <label for="mail">メールアドレス<span class="essential">*</span></label>
+          <input type="text">
+        </div>
+        <div class="contact-content">
+          <label for="detail">お問い合わせ内容<span class="essential">*</span></label>
+          <textarea name="" id=""></textarea>
+        </div>
+      </form>
+      <a class="btn" href="#">お申し込み</a>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="wrap">
+      <div class="flex">
+        <small>&copy; 2020 TECH inc.</small>
+        <ul class="flex">
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="service.html">事業内容</a></li>
+          <li><a href="news.html">ニュース</a></li>
+          <li><a href="blog.html">社員ブログ</a></li>
+          <li><a href="company.html">会社概要</a></li>
+          <li><a href="recruit.html">採用情報</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script>
+    const target = document.getElementById("hamburger");
+    target.addEventListener('click', () => {
+      const target = document.getElementById("hamburger");
+      target.classList.toggle('open');
+      const nav = document.getElementById("drawer-nav");
+      nav.classList.toggle('in');
+    });
+  </script>
+</body>
+</html>
